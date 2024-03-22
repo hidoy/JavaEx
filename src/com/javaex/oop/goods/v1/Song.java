@@ -1,7 +1,7 @@
 package com.javaex.oop.goods.v1;
 
 public class Song {
-	String title=new String();
+	private String title=new String();
 	String artist=new String();
 	String album=new String();
 	String composer=new String();
@@ -46,6 +46,6 @@ public class Song {
 		track=theTrack;
 	}
 	public void showInfo() {
-		System.out.printf("%s, %s(%s, %d,%d track, %s) s %n", artist,title,album,year,track,composer);
+		System.out.printf("%s, %s(%s, %d,%d track, %s) %n", artist,title,album,year,track,composer);
 	}
 }
