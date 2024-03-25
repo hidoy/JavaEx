@@ -1,4 +1,4 @@
-package com.javaex.oop.goods.v1;
+package com.javaex.oop.song.v1;
 
 public class Song {
 	private String title=new String();

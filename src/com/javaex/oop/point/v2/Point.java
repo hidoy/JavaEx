@@ -1,7 +1,11 @@
-package com.javaex.oop.goods.v1;
+package com.javaex.oop.point.v2;
 
 public class Point {
 	private int x=0,y=0;
+	public Point(int theX,int theY) {
+		x=theX;
+		y=theY;
+	}
 	public int getX() {
 		return x;
 	}
