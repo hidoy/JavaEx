@@ -1,11 +1,11 @@
 package com.javaex.oop.staticmember;
+import java.util.Scanner;
 
 public class SingletonApp {
 	public static void main(String[] args) {
 		// Singleton s1=new Singleton();
 		Singleton s1=Singleton.getIntance();
 		Singleton s2=Singleton.getIntance();
-		
 		System.out.println("s1 = " + s1);
 		System.out.println("s2 = " + s2);
 		
