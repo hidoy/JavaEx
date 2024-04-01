@@ -2,7 +2,10 @@ package com.javaex.exception;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ArithmeticExceoptionEx {
+//사용자 정의 예외
+
+
+public class ArithmeticExceptionEx {
 	
 	// 정수 1개 입력
 	// 100을 입력받은 정수로 나눔
