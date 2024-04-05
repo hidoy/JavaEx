@@ -1,6 +1,7 @@
 package com.javaex.collection.list;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListEx {
@@ -11,7 +12,8 @@ public class ListEx {
 		// List 객체가 아니라 인터페이스
 		// 순서가 있다
 		// 중복 허용
-		List<String> lst = new LinkedList<>();
+//		List<String> lst = new LinkedList<>();
+		List<String> lst = new ArrayList<>();
 		
 		// 객체 추가 : .add - 맨 마지막에 노드 연결
 		lst.add("Java");
@@ -40,7 +42,15 @@ public class ListEx {
 		
 		System.out.println("lst=" + lst);	
 		
-		// TODO: List 순회
+		// Set, List 순회시에는 Iterator 객체 사용
+		System.out.println("========== Iterator");
+		Iterator<String> it = lst.iterator();
+		
+		while(it.hasNext()) {   // 뒤에 더 있음?
+			String item = it.next();  // 요소 추출 후 다음으로 이동
+			System.out.println(item + " ");
+		}
+		System.out.println();  	   
 		
 		// 비워봅시다
 		lst.clear();
